@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Song Generator</title>
+  <script defer src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center min-h-screen p-4">
+  <h1 class="text-4xl font-bold my-6">🎤 AI Song Generator</h1>
+  <textarea id="prompt" class="w-full max-w-xl p-3 rounded bg-gray-800 border border-gray-600" rows="4" placeholder="Enter theme or prompt (e.g. a sad gospel about heartbreak)..."></textarea>
+  <button onclick="generateLyrics()" class="mt-4 px-6 py-2 bg-blue-600 rounded hover:bg-blue-700">Generate Song</button>
+  <pre id="output" class="mt-6 whitespace-pre-wrap bg-gray-800 p-4 rounded w-full max-w-xl border border-gray-600"></pre>
+</body>
+</html>
